@@ -24,5 +24,5 @@
 022_myrepl transformed_shape_op_helper insert_newest_poly_in_poly_linked_list_40ED6
 022_myrepl word_40ED6 poly_linked_list_40ED6
 022_myrepl word_45D98 poly_linked_list_40ED6_tail
-022_myrepl timertestflag is_sprite_rendering_slow
-
+022_myrepl timertestflag slow_video_mgmt
+022_myrepl do_mrl_textres show_graphic_levels_menu
