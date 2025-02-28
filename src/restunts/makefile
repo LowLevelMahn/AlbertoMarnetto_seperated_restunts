@@ -8,7 +8,7 @@ TASM=
 
 restunts: asm c
 	cd dos
-	if exist makefile make 
+	if exist makefile make /DCONFIG=$(CONFIG) /DTASM=$(TASM)
 	cd ..
 
 restunts-original: asmorig
@@ -33,7 +33,7 @@ c:
 
 restunts-sdl:
 	cd sdl
-	if exist makefile make
+	if exist makefile make /DCONFIG=$(CONFIG) /DTASM=$(TASM)
 	cd ..
 
 repldump: asm c
@@ -43,7 +43,7 @@ repldump: asm c
 
 repldump-original: asmorig
 	cd repldump
-	if exist makefile make /DTARGET=original
+	if exist makefile make /DTARGET=original /DCONFIG=$(CONFIG) /DTASM=$(TASM)
 	cd ..
 
 clean:
